@@ -309,7 +309,7 @@ def main():
     elif menu == "Logout":
         st.session_state.user_id = None
         st.success("Logged out successfully!")
-        st.experimental_rerun()
+        st.rerun()
 
 if __name__ == "__main__":
     main()
