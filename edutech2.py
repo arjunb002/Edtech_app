@@ -87,7 +87,7 @@ def main():
                     if user:
                         st.session_state.user_id = user[0]
                         st.success("Logged in successfully!")
-                        st.experimental_rerun()
+                        st.rerun()
                     else:
                         st.error("User not found")
         
