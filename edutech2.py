@@ -281,7 +281,7 @@ def main():
                         conn.commit()
                         st.success("Message sent!")
                         st.session_state["clear_new_message"] = True  # Set flag to clear on next run
-                        st.experimental_rerun()
+                        st.rerun()
                     else:
                         st.warning("Cannot send an empty message.")
         else:
